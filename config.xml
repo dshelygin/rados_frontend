@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>rados frontend properties</comment>
+    <entry key="accessKey">EF74ENPQ2E270OXC943W</entry>
+    <entry key="secretKey">X56jAJ64M49dYUBp7EjKBuGKdKGrxrvZ4QZr4Znf</entry>
+</properties>
