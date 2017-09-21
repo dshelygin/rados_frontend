@@ -40,7 +40,7 @@ public enum S3Connection {
         clientConfig.setSignerOverride("S3SignerType");
         AwsClientBuilder.EndpointConfiguration endpoint =
                                                                 //todo вынести в конфиг
-                    new AwsClientBuilder.EndpointConfiguration("46.38.54.75:7480","local");
+                    new AwsClientBuilder.EndpointConfiguration("10.200.0.161:7480","local");
 
         AmazonS3ClientBuilder builder = AmazonS3ClientBuilder.standard();
         builder.setClientConfiguration(clientConfig);
