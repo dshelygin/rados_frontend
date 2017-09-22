@@ -8,11 +8,9 @@ import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.*;
-import com.amazonaws.util.StringUtils;
 import com.sun.istack.internal.Nullable;
 import utils.Configuration;
 
-import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -53,6 +51,7 @@ public enum S3Connection {
     /**
      * Возвращает объект из корзины
      */
+
     @Nullable
     public S3Object getS3Object(String bucket, String key) {
         try {
