@@ -8,7 +8,6 @@ import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.*;
-import com.sun.istack.internal.Nullable;
 import utils.Configuration;
 
 import java.util.Map;
@@ -52,7 +51,7 @@ public enum S3Connection {
      * Возвращает объект из корзины
      */
 
-    @Nullable
+
     public S3Object getS3Object(String bucket, String key) {
         try {
             GetObjectRequest req = new GetObjectRequest(bucket,key);
@@ -67,7 +66,7 @@ public enum S3Connection {
     /**
      * Возвращает объект из корзины в виде потока
      */
-    @Nullable
+
     public S3ObjectInputStream getS3ObjectAsStream(String bucket, String key) {
         S3Object s3object = getS3Object(bucket, key);
         if (s3object == null) {
@@ -81,7 +80,7 @@ public enum S3Connection {
     /**
      * Возвращает метаданные объекта
      */
-    @Nullable
+
     private ObjectMetadata getS3ObjectMeta(String bucket, String key) {
         try {
             GetObjectMetadataRequest req = new GetObjectMetadataRequest(bucket,key);
@@ -95,7 +94,7 @@ public enum S3Connection {
     /**
      * Возвращает значение заданного поля пользовательских метаданных объекта
      */
-    @Nullable
+
     public String getS3ObjectMetaParameter(String bucket, String key, String paramName) {
         ObjectMetadata metadata = getS3ObjectMeta(bucket,key);
         if (metadata != null) {
