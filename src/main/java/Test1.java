@@ -1,6 +1,7 @@
 import s3.S3Connection;
 
 
+
 /**
  * Created by dshelygin on 09.08.2017.
  * тест
@@ -23,6 +24,7 @@ public class Test1 {
         } catch (Exception e) {
             System.err.print(e.getMessage());
         }
+
     }
 
 
