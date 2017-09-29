@@ -27,7 +27,11 @@ public class UriHandlerS3Test extends UriHandlerS3{
 
         String responseMessage = S3Connection.INSTANCE.getS3ObjectMetaParameter(getBucket(),getKey(),"test");
 
+        String tmp = "for checking commit merging";
+
         return getMessageResponse(responseMessage, HttpResponseStatus.OK, false);
+
+
 
 
 
